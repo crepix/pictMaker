@@ -1,0 +1,32 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>PictMaker</title>
+</head>
+<body>
+  <div>
+    <input type="radio" name="radio" value="5" onClick="setSize(0);" checked> 5x5
+    <input type="radio" name="radio" value="10" onClick="setSize(1);"> 10x10
+    <input type="radio" name="radio" value="15" onClick="setSize(2);"> 15x15
+    <input type="radio" name="radio" value="20" onClick="setSize(3);"> 20x20
+  </div>
+  <div style="background-color : #DDDDDD; width: 300px;">
+    <canvas id="canvas" width="300" height="300"></canvas>
+  </div>
+  <div>
+    <button type="button" name="output" value="" onclick="dump()">
+      output
+    </button>
+  </div>
+  <hr>
+  <div id="row">
+  </div>
+  <hr>
+  <div id="col">
+  </div>
+  <hr>
+  <div id="array">
+  </div>
+</body>
+<script type="text/javascript" src="pict.js"></script>
+</html>
